@@ -1,8 +1,8 @@
 .wrapper {
-    /* max-width: 960px; */
-    width: 956px;
-    /* min-height: 1380px; */
-    height: 1380px;
+    max-width: 960px;
+    /* width: 956px; */
+    min-height: 1380px;
+    /* height: 1380px; */
     min-width: 320px;
     margin: 0 auto;
     font-family: 'Roboto Condensed', sans-serif;
@@ -20,7 +20,8 @@
     align-items: center;
     background-color: #353c4c;
     background: linear-gradient(90deg, #111318 0%, #57627d 50%, #111318 100%);
-    box-shadow: 0px 5px 7px #0000008c;
+    box-shadow: 0px 4px 4px 1px #000000bd;
+    position: relative;
     z-index: 5;
 }
 
@@ -39,9 +40,9 @@
 }
 
 .owner-photo {
-    padding: 5px;
+    padding: 6px;
     box-shadow: inset 0px 1px 2px 1px #000000c4;
-    border-radius: 75px;
+    border-radius: 10px;
     position: relative;
 }
 
@@ -50,8 +51,7 @@
     max-width: 136px;
     height: auto;
     box-shadow: 0px 1px 3px 2px #000000b0;
-    border-radius: 70px;
-    padding: 3px;
+    border-radius: 6px;
 }
 
 .cv-header-social {
@@ -117,6 +117,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
+    z-index: 3;
 }
 
 .cv-main aside {
@@ -129,7 +131,6 @@
     text-align: center;
     box-sizing: border-box;
     background-color: #b9c4ca;
-    box-shadow: inset 0px 6px 3px -3px #00000094;
     font-weight: bold;
 }
 
@@ -137,6 +138,8 @@
     width: 32%;
     padding: 60px 15px 30px 20px;
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .cv-main .cv-content article {
@@ -253,7 +256,10 @@
 
 .cv-main span {
     font-weight: bold;
+}
 
+.education span {
+    min-width: 100px;
 }
 
 .cv-footer {
@@ -331,4 +337,33 @@
 .skill-logo:hover img {
     width: 95%;
     filter: grayscale(0);
+}
+
+
+@media screen and (max-width: 800px) {
+    .cv-main {
+        flex-direction: column;
+    }
+
+    .cv-main aside {
+        width: 100%;
+        padding: 20px;
+        flex-direction: initial;
+        justify-content: space-around;
+    }
+
+    .cv-main aside article {
+        margin-bottom: 0;
+        padding: 10px;
+    }
+
+    .hobbies,
+    .portfolio {
+        display: none;
+    }
+
+    .cv-content {
+        width: 100%;
+        box-shadow: none;
+    }
 }
