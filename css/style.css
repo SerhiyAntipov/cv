@@ -54,7 +54,8 @@
     padding: 3px;
 }
 
-.cv-title-steel {
+.cv-header-social {
+    padding: 2px 0;
     width: 100%;
     background-color: #e1e1e1;
     background: url(../img/bg_stell.jpg);
@@ -62,26 +63,51 @@
     border-bottom: 2px solid #2d3842;
     margin: 15px 0 10px;
     min-height: 40px;
+    padding-right: 75px;
 }
 
-.cv-title-stroke {
-    display: inline-block;
+.cv-header-social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     margin: 0 auto;
-    border-radius: 25px;
-    padding: 5px;
+}
+
+.cv-header-social li {
+    margin: 0px 10px;
+    border-radius: 5px;
+    display: inline-block;
     box-shadow: inset 0px 1px 2px 1px #000000c4;
 }
 
-.cv-title-stroke h2 {
-    padding: 0 30px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 25px;
-    margin-top: 2px;
-    /* box-shadow: 0px 1px 3px 2px #000000b0; */
-    color: #2d2d2dab;
+.cv-header-social a {
+    display: block;
+    width: 35px;
+    border-radius: 3px;
+    background-color: #353c4c;
+    background: linear-gradient(0deg, #111318 0%, #57627d 50%, #111318 100%);
+    border-top: 1px solid #b1b3c0;
+    box-shadow: 0px 1px 2px 1px #0000007d;
+    margin: 4px 10px;
+}
+
+.cv-header-social a:hover {
+    background-color: #353c4c;
+    background: linear-gradient(0deg, #111318 0%, #464f66 50%, #111318 100%);
+    border-top: 1px solid #1e1e20;
+    box-shadow: inset 0px 1px 4px 1px #000000c4;
+}
+
+.cv-header-social img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.cv-header-social a:hover img {
+    width: 92%;
+    padding: 4% 0;
 }
 
 .cv-main {
@@ -237,60 +263,6 @@
     min-height: 160px;
 }
 
-.cv-footer-social {
-    padding: 2px 0;
-
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #2d3842;
-    background-color: #e1e1e1;
-    background: url(../img/bg_stell.jpg);
-}
-
-.cv-footer-social ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 60%;
-    margin: 0 auto;
-}
-
-.cv-footer li {
-    margin: 0px 10px;
-    border-radius: 5px;
-    display: inline-block;
-    box-shadow: inset 0px 1px 2px 1px #000000c4;
-}
-
-.cv-footer-social a {
-    display: block;
-    width: 35px;
-    border-radius: 3px;
-    background-color: #50545b;
-    background: linear-gradient(0deg, #1e1e20, #808792);
-    border-top: 1px solid #b1b3c0;
-    box-shadow: 0px 1px 2px 1px #0000007d;
-    margin: 4px 10px;
-}
-
-.cv-footer-social a:hover {
-    background-color: #44474d;
-    background: linear-gradient(0deg, #808792, #1e1e20);
-    border-top: 1px solid #1e1e20;
-    box-shadow: inset 0px 1px 4px 1px #000000c4;
-}
-
-.cv-footer-social img {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-}
-
-.cv-footer-social a:hover img {
-    width: 92%;
-    padding: 4% 0;
-}
-
 .cv-footer-content {
     color: rgb(235, 219, 170);
     text-transform: uppercase;
@@ -358,4 +330,5 @@
 .contact-link-wrapper a:hover img,
 .skill-logo:hover img {
     width: 95%;
+    filter: grayscale(0);
 }
