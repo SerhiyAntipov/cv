@@ -179,7 +179,7 @@
 
 .contacts a:hover,
 .portfolio a:hover {
-    color: #b0533d;
+    color: #b44328;
 }
 
 .professional-skill div {
@@ -302,4 +302,60 @@
     display: inline-block;
     padding: 0 5px;
     text-transform: none;
+}
+
+
+
+/* ----------------- */
+
+.button-block-line {
+    background-color: #e1e1e1;
+    background: url(../img/bg_stell.jpg);
+    border-top: 1px solid #ffffff;
+    border-bottom: 2px solid #2d3842;
+    margin: 10px 0 5px;
+    padding-top: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+
+.contact-link-wrapper {
+    display: inline-block;
+    border-radius: 5px;
+    margin: 0 5px 4px;
+    box-shadow: inset 0px 1px 2px 1px #000000c4;
+}
+
+.contact-link-wrapper a {
+    display: block;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #50545b69;
+    border-top: 1px solid #b1b3c0;
+    height: 35px;
+    width: 110px;
+    box-shadow: 0px 1px 2px 1px #000000c4;
+    padding: 5px;
+}
+
+
+.contact-link-wrapper a img,
+.skill-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    filter: grayscale(1);
+}
+
+.skill-logo:hover,
+.contact-link-wrapper a:hover {
+    box-shadow: inset 0px 0px 2px 0px #000000c4;
+}
+
+.contact-link-wrapper a:hover img,
+.skill-logo:hover img {
+    width: 95%;
 }
