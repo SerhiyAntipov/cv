@@ -135,6 +135,7 @@
     box-sizing: border-box;
     background-color: #b9c4ca;
     font-weight: bold;
+    order: 0;
 }
 
 .cv-main aside {
@@ -143,6 +144,7 @@
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
+    order: 1;
 }
 
 .cv-main .cv-content article {
@@ -184,6 +186,7 @@
     background-color: #e7e7e7;
     box-sizing: border-box;
     box-shadow: inset 6px 0px 5px -2px #00000094;
+    order: 2;
 }
 
 aside label {
@@ -328,7 +331,7 @@ aside label {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    filter: grayscale(1);
+    /* filter: grayscale(1); */
 }
 
 .skill-logo:hover,
@@ -339,7 +342,7 @@ aside label {
 .contact-link-wrapper a:hover img,
 .skill-logo:hover img {
     width: 95%;
-    filter: grayscale(0);
+    filter: grayscale(1);
 }
 
 
@@ -353,32 +356,36 @@ aside label {
         padding: 20px;
         flex-direction: initial;
         justify-content: space-around;
+        /* order: 3; */
     }
 
     .cv-main aside article {
         margin-bottom: 0;
         padding: 10px;
         text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
     }
 
-    .hobbies,
-    .language,
-    .hobbies,
-    .about-me {
-        display: none;
+    .cv-main aside p {
+        padding: 0 10px;
+    }
+
+    .cv-main h2 {
+        width: 100%;
     }
 
     .cv-content {
         width: 100%;
         box-shadow: none;
-        padding: 30px 10px 0 25px;
+        padding: 30px 20px 0 35px;
     }
 
     aside label {
-        justify-content: center;
+        padding: 0 5px;
     }
-
-
 }
 
 @media screen and (max-width: 600px) {
@@ -408,6 +415,6 @@ aside label {
     }
 
     .button-block-line {
-        justify-content: space-around;
+        justify-content: center;
     }
 }
