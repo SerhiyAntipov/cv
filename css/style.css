@@ -184,15 +184,13 @@
     order: 2;
 }
 
-aside label {
+aside li {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
 }
 
-.contacts img,
-.portfolio img,
-.hobbies img {
+aside img {
     width: 25px;
     height: auto;
     margin-right: 10px;
@@ -204,7 +202,7 @@ aside label {
     color: #2d2d2d;
 }
 
-.portfolio-label {
+.wrapper-portfolio-link {
     border-radius: 5px;
     padding: 5px;
     box-shadow: inset 0px 1px 2px 1px #000000c4;
@@ -394,7 +392,13 @@ aside .portfolio h2 {
         width: 100%;
     }
 
-    aside label {
+    aside ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    aside li {
         padding: 0 5px;
     }
 
