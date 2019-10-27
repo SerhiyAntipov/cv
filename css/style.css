@@ -143,8 +143,10 @@
     padding: 60px 15px 30px 20px;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     order: 1;
+    background-color: #f6f6f6;
 }
 
 .cv-main .cv-content article {
@@ -174,15 +176,9 @@
     margin-left: -15px;
 }
 
-/* .language p,
-.about-me p,
-.hobbies p {
-    margin-bottom: 10px;
-} */
-
 .cv-content {
     padding: 40px 30px 0 45px;
-    width: 67%;
+    width: 68%;
     background-color: #e7e7e7;
     box-sizing: border-box;
     box-shadow: inset 6px 0px 5px -2px #00000094;
@@ -203,11 +199,38 @@ aside label {
     margin-right: 10px;
 }
 
-
 .contacts a,
 .portfolio a {
     text-decoration: none;
     color: #2d2d2d;
+}
+
+.portfolio-label {
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: inset 0px 1px 2px 1px #000000c4;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.portfolio a {
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px 1px #0000007d;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.portfolio a:hover {
+    box-shadow: 0px 0px 1px 1px #000000c4;
+}
+
+aside .portfolio h2 {
+    margin-bottom: 0px;
+    border-bottom: none;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .contacts a:hover,
@@ -271,7 +294,6 @@ aside label {
     background-color: #353c4c;
     background: linear-gradient(90deg, #111318 0%, #57627d 50%, #111318 100%);
     padding: 15px 0 25px;
-    /* min-height: 100px; */
 }
 
 .cv-footer-content {
@@ -287,10 +309,7 @@ aside label {
     text-transform: none;
 }
 
-
-
 /* ----------------- */
-
 .button-block-line {
     background-color: #e1e1e1;
     background: url(../img/bg_stell.jpg);
@@ -302,7 +321,6 @@ aside label {
     flex-wrap: wrap;
     justify-content: center
 }
-
 
 .contact-link-wrapper {
     display: inline-block;
@@ -319,11 +337,8 @@ aside label {
     background: linear-gradient(0deg, #111318 0%, #57627d 50%, #111318 100%);
     border-top: 1px solid #b1b3c0;
     box-shadow: 0px 1px 2px 1px #0000007d;
-    /* height: 35px;
-    width: 110px; */
     padding: 5px;
 }
-
 
 .contact-link-wrapper a img {
     display: block;
@@ -399,7 +414,6 @@ aside label {
         background-color: #f6f6f6;
     }
 
-
     .contact-link-wrapper a img {
         width: 60px;
     }
@@ -409,13 +423,10 @@ aside label {
         margin: 2px;
     }
 
-
-
     .cv-footer {
         box-shadow: 0px -2px 4px #000000b5;
         position: relative;
         z-index: 5;
-        /* min-height: auto; */
     }
 }
 
