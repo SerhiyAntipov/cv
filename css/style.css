@@ -1,6 +1,5 @@
 .wrapper {
     max-width: 960px;
-    /* width: 956px; */
     min-height: 1380px;
     /* height: 1380px; */
     min-width: 480px;
@@ -20,7 +19,7 @@
     align-items: center;
     background-color: #353c4c;
     background: linear-gradient(90deg, #111318 0%, #57627d 50%, #111318 100%);
-    box-shadow: 0px 4px 4px 1px #000000bd;
+    box-shadow: 0px 3px 4px #000000b5;
     position: relative;
     z-index: 5;
 }
@@ -130,12 +129,13 @@
 
 .vacancy-description {
     width: 100%;
-    padding: 15px;
+    padding: 35px 0 30px;
     text-align: center;
     box-sizing: border-box;
-    background-color: #b9c4ca;
+    background-color: #bcbcbc;
     font-weight: bold;
     order: 0;
+    border-bottom: 1px solid #828282;
 }
 
 .cv-main aside {
@@ -148,7 +148,7 @@
 }
 
 .cv-main .cv-content article {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .cv-main aside article {
@@ -181,7 +181,7 @@
 } */
 
 .cv-content {
-    padding: 30px 30px 0 45px;
+    padding: 40px 30px 0 45px;
     width: 67%;
     background-color: #e7e7e7;
     box-sizing: border-box;
@@ -227,11 +227,10 @@ aside label {
     display: block;
     height: 40px;
     width: auto;
-    filter: grayscale(1);
 }
 
 .professional-skill div:hover img {
-    filter: grayscale(0);
+    filter: grayscale(1);
 }
 
 .education p,
@@ -271,8 +270,8 @@ aside label {
 .cv-footer {
     background-color: #353c4c;
     background: linear-gradient(90deg, #111318 0%, #57627d 50%, #111318 100%);
-    padding-top: 15px;
-    min-height: 160px;
+    padding: 15px 0 25px;
+    /* min-height: 100px; */
 }
 
 .cv-footer-content {
@@ -308,7 +307,7 @@ aside label {
 .contact-link-wrapper {
     display: inline-block;
     border-radius: 5px;
-    margin: 0 5px 4px;
+    margin: 0 15px 4px;
     box-shadow: inset 0px 1px 2px 1px #000000c4;
 }
 
@@ -316,33 +315,34 @@ aside label {
     display: block;
     border-radius: 5px;
     margin: 5px;
-    background-color: #50545b69;
+    background-color: #353c4c;
+    background: linear-gradient(0deg, #111318 0%, #57627d 50%, #111318 100%);
     border-top: 1px solid #b1b3c0;
-    height: 35px;
-    width: 110px;
-    box-shadow: 0px 1px 2px 1px #000000c4;
+    box-shadow: 0px 1px 2px 1px #0000007d;
+    /* height: 35px;
+    width: 110px; */
     padding: 5px;
 }
 
 
-.contact-link-wrapper a img,
-.skill-logo img {
+.contact-link-wrapper a img {
     display: block;
-    width: 100%;
+    width: 40px;
     height: auto;
     margin: 0 auto;
-    /* filter: grayscale(1); */
 }
 
-.skill-logo:hover,
 .contact-link-wrapper a:hover {
-    box-shadow: inset 0px 0px 2px 0px #000000c4;
+    background-color: #353c4c;
+    background: linear-gradient(0deg, #111318 0%, #464f66 50%, #111318 100%);
+    border-top: 1px solid #1e1e20;
+    box-shadow: inset 0px 1px 4px 1px #000000c4;
 }
 
-.contact-link-wrapper a:hover img,
-.skill-logo:hover img {
-    width: 95%;
-    filter: grayscale(1);
+.contact-link-wrapper a:hover img {
+    width: 36px;
+    margin: 2px;
+    height: auto;
 }
 
 
@@ -351,11 +351,22 @@ aside label {
         flex-direction: column;
     }
 
+    .vacancy-description {
+        border-bottom: none;
+        box-shadow: 0px 3px 4px #000000b5;
+        position: relative;
+        z-index: 3;
+    }
+
     .cv-main aside {
         width: 100%;
         padding: 20px;
         flex-direction: initial;
         justify-content: space-around;
+        background-color: #e7e7e7;
+        box-shadow: 0px 3px 4px #000000b5;
+        position: relative;
+        z-index: 2;
         /* order: 3; */
     }
 
@@ -381,10 +392,18 @@ aside label {
         width: 100%;
         box-shadow: none;
         padding: 30px 20px 0 35px;
+        background-color: #f6f6f6;
     }
 
     aside label {
         padding: 0 5px;
+    }
+
+    .cv-footer {
+        box-shadow: 0px -2px 4px #000000b5;
+        position: relative;
+        z-index: 5;
+        /* min-height: auto; */
     }
 }
 
