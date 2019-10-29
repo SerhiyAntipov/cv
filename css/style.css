@@ -240,9 +240,8 @@ aside img {
     padding-left: 5px;
 }
 
-.education span {
-    min-width: 100px;
-    text-align: right;
+.professional-skill span {
+    padding-left: 0;
 }
 
 .cv-content h3 {
