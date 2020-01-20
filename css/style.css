@@ -222,6 +222,16 @@ aside img {
     align-items: center;
 }
 
+@media (max-width: 600px) {
+
+    .experience p,
+    .education p,
+    .courses p {
+        align-items: flex-start;
+    }
+}
+
+
 .experience p::before,
 .education p::before,
 .courses p::before {
