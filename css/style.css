@@ -16,7 +16,7 @@
 
 .cv-header {
     min-height: 130px;
-    padding-top: 25px;
+    padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -66,7 +66,7 @@
     background: url(../img/bg_stell.jpg);
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #2d3842;
-    margin: 20px 0 10px;
+    margin: 15px 0 10px;
     min-height: 40px;
 }
 
@@ -119,7 +119,7 @@
 }
 
 .vacancy-description {
-    padding: 30px 5px 20px;
+    padding: 20px 5px 10px;
     text-align: center;
     background-color: #bcbcbc;
     font-size: 22px;
@@ -134,7 +134,7 @@
 
 .cv-main aside {
     width: 320px;
-    padding: 40px 15px 30px 20px;
+    padding: 25px 15px 30px 20px;
     box-sizing: border-box;
     order: 1;
     background-color: #f6f6f6;
@@ -191,7 +191,7 @@ aside img {
 }
 
 .cv-content {
-    padding: 35px 30px 0 45px;
+    padding: 20px 30px 0 45px;
     background-color: #e7e7e7;
     box-sizing: border-box;
     box-shadow: inset 6px 0px 5px -2px #00000094;
@@ -199,13 +199,13 @@ aside img {
 }
 
 .cv-main .cv-content article {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .cv-content h3 {
     margin-left: -15px;
     font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-weight: bold;
 
 }
