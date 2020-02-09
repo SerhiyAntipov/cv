@@ -249,7 +249,7 @@ aside img {
 
 .cv-main span {
     font-weight: bold;
-    padding-left: 5px;
+    /* padding-left: 5px; */
 }
 
 .cv-main .cv-content .professional-skill {
