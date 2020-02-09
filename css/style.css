@@ -157,6 +157,10 @@
     border-top: 2px solid #2d2d2d59;
 }
 
+.link span img{
+  margin-bottom: 3px;
+}
+
 .link span:hover {
     border-bottom: 2px solid #b44328;
     border-top: 2px solid #b44328;
