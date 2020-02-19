@@ -158,7 +158,7 @@
 }
 
 .link span img{
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 .link span:hover {
@@ -254,6 +254,7 @@ aside img {
 
 .cv-main .cv-content .professional-skill {
     margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 
 .professional-skill span {
@@ -267,7 +268,8 @@ aside img {
 .professional-skill div {
     display: flex;
     align-items: center;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
+    margin-bottom: 10px;
     margin-left: -15px;
     cursor: pointer;
 }
