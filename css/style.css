@@ -268,20 +268,22 @@ aside img {
 .professional-skill div {
     display: flex;
     align-items: center;
-    /* margin-bottom: 5px; */
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    /* margin-bottom: 10px; */
     margin-left: -15px;
     cursor: pointer;
 }
 
 .professional-skill div:hover img {
-    filter: grayscale(1);
+    filter: grayscale(0);
 }
 
 .professional-skill img {
     display: block;
     height: 40px;
     width: auto;
+    margin-right: 10px;
+    filter: grayscale(1);
 }
 
 .cv-footer {
