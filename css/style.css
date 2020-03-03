@@ -217,8 +217,8 @@ aside img {
 }
 
 .time-country-code span {
-    padding-right: 15px;
-    text-transform: uppercase;
+    padding-right: 5px;
+    /* text-transform: uppercase; */
 }
 
 .experience p,
