@@ -152,18 +152,24 @@
 .link span {
     font-size: 24px;
     margin-bottom: 20px;
+    padding-bottom: 3px;
     display: inline-block;
     border-bottom: 2px solid #2d2d2d59;
-    border-top: 2px solid #2d2d2d59;
+    /* border-top: 2px solid #2d2d2d59; */
 }
 
-.link span img{
-  margin-bottom: 2px;
+.link {
+    position: absolute;
+    bottom: 5px;
+}
+
+.link span img {
+    margin-bottom: 2px;
 }
 
 .link span:hover {
-    border-bottom: 2px solid #b44328;
-    border-top: 2px solid #b44328;
+    /* border-bottom: 2px solid #b44328; */
+    /* border-top: 2px solid #b44328; */
 }
 
 aside li {
@@ -210,6 +216,11 @@ aside img {
 
 }
 
+.time-country-code span {
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
 .experience p,
 .education p,
 .courses p {
@@ -222,15 +233,12 @@ aside img {
     align-items: center;
 }
 
-@media (max-width: 600px) {
 
-    .experience p,
-    .education p,
-    .courses p {
-        align-items: flex-start;
-    }
+.experience span,
+.education span,
+.courses span {
+    padding-left: 5px;
 }
-
 
 .experience p::before,
 .education p::before,
@@ -338,7 +346,35 @@ aside img {
     height: auto;
 }
 
+/* 
+.foot-content p {
+    padding-top: 25px;
+    text-align: center;
+    color: rgb(235, 219, 170);
+    font-size: 14px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+} */
+
+.cv-footer {
+    box-shadow: 0px -2px 4px #000000b5;
+    position: relative;
+    z-index: 5;
+}
+
 @media screen and (max-width: 800px) {
+
+    .contacts ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .link {
+        position: static;
+        bottom: unset;
+        margin-top: 20px;
+    }
+
     .cv-main {
         flex-direction: column;
     }
@@ -365,8 +401,10 @@ aside img {
 
     .cv-main aside article {
         margin-bottom: 0;
-        padding: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         text-align: center;
+       
     }
 
     aside li {
@@ -406,17 +444,19 @@ aside img {
         margin: 2px;
     }
 
-    .cv-footer {
-        box-shadow: 0px -2px 4px #000000b5;
-        position: relative;
-        z-index: 5;
-    }
 }
 
 @media screen and (max-width: 600px) {
     .cv-main {
         font-size: 20px;
     }
+
+    .experience p,
+    .education p,
+    .courses p {
+        align-items: flex-start;
+    }
+
 }
 
 @media screen and (max-width: 520px) {
@@ -434,5 +474,4 @@ aside img {
         padding-top: 0;
         margin-top: -15px;
     }
-
 }
