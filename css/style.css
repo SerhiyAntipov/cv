@@ -27,6 +27,7 @@
     box-shadow: 0px 3px 4px #000000b5;
     position: relative;
     z-index: 5;
+    user-select: none
 }
 
 .cv-owner {
@@ -209,6 +210,7 @@ aside img {
     height: auto;
     margin-right: 3px;
     vertical-align: bottom;
+    user-select: none;
 }
 
 .link a {
@@ -320,6 +322,7 @@ aside img {
     width: auto;
     margin-right: 10px;
     filter: grayscale(1);
+    user-select: none;
 }
 
 .cv-footer {
