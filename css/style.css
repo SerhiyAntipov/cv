@@ -60,10 +60,6 @@
     margin-bottom: 5px;
 }
 
-.time-country-code {
-    font-weight: bold;
-}
-
 .owner-photo {
     padding: 6px;
     box-shadow: inset 0px 1px 2px 1px #000000c4;
@@ -252,10 +248,24 @@ aside img {
     padding-top: 0;
 }
 
-.experience span,
+.work-period,
 .education span,
 .courses span {
     padding-left: 5px;
+}
+
+.experience-list {
+    font-weight: bold;
+}
+
+.experience a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.experience a:hover span {
+    text-decoration: none;
+    color: #b44328;
 }
 
 .experience p:not(.expiriense-description)::before,
