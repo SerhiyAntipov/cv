@@ -169,6 +169,7 @@
     font-weight: bold;
     display: inline-block;
     border-bottom: 2px solid #2d2d2d59;
+    color: #132860
 }
 
 .link span {
@@ -231,6 +232,7 @@ aside img {
     font-size: 30px;
     margin-bottom: 5px;
     font-weight: bold;
+    color: #132860
 }
 
 .experience p,
@@ -259,12 +261,17 @@ aside img {
     font-weight: bold;
 }
 
+a .job-title{
+    color: #132860;
+    font-size: 0.9em;
+}
+
 .experience a {
     text-decoration: none;
     color: inherit;
 }
 
-.experience a:hover span {
+.experience a:hover span:not(.job-title){
     text-decoration: none;
     color: #b44328;
 }
