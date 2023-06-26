@@ -84,8 +84,8 @@
 }
 
 .cv-header-social {
-    text-align: right;
-    padding-right: 40px;
+    /* text-align: right; */
+    padding-left: 40px;
 }
 
 .cv-header-social li {
@@ -216,7 +216,7 @@ aside img {
 }
 
 .cv-content {
-    padding: 20px 30px 20px 45px;
+    padding: 20px 30px 35px 45px;
     background-color: #e7e7e7;
     box-sizing: border-box;
     box-shadow: inset 6px 0px 5px -2px #00000094;
